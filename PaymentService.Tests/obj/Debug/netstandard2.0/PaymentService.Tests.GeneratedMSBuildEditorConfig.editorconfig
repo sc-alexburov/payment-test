@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = PaymentService.Tests
+build_property.ProjectDir = C:\Users\albu\Desktop\c-sharp-payment-test-master\PaymentService.Tests\

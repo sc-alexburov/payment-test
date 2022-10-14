@@ -1,0 +1,9 @@
+C:\Users\albu\Desktop\c-sharp-payment-test-master\PaymentServices\bin\Debug\net5.0\LearnSolidAndTesting.deps.json
+C:\Users\albu\Desktop\c-sharp-payment-test-master\PaymentServices\bin\Debug\net5.0\LearnSolidAndTesting.dll
+C:\Users\albu\Desktop\c-sharp-payment-test-master\PaymentServices\bin\Debug\net5.0\ref\LearnSolidAndTesting.dll
+C:\Users\albu\Desktop\c-sharp-payment-test-master\PaymentServices\bin\Debug\net5.0\LearnSolidAndTesting.pdb
+C:\Users\albu\Desktop\c-sharp-payment-test-master\PaymentServices\obj\Debug\net5.0\PaymentServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\albu\Desktop\c-sharp-payment-test-master\PaymentServices\obj\Debug\net5.0\PaymentServices.csproj.CoreCompileInputs.cache
+C:\Users\albu\Desktop\c-sharp-payment-test-master\PaymentServices\obj\Debug\net5.0\LearnSolidAndTesting.dll
+C:\Users\albu\Desktop\c-sharp-payment-test-master\PaymentServices\obj\Debug\net5.0\ref\LearnSolidAndTesting.dll
+C:\Users\albu\Desktop\c-sharp-payment-test-master\PaymentServices\obj\Debug\net5.0\LearnSolidAndTesting.pdb
