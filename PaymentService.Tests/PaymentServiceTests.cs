@@ -9,24 +9,21 @@ namespace PaymentService.Tests
     public class PaymentServiceTests
     {
 
-        private IDataStore dataStore;
-        private Account account;
+        private IDataStore _dataStore;
         private PaymentServices.Services.PaymentService _ps;
 
 
         [SetUp]
         public void Setup()
         {
-            dataStore = Substitute.For<IDataStore>();
-            account = Substitute.For<Account>();
-
-            _ps = new PaymentServices.Services.PaymentService(dataStore);
+            _dataStore = Substitute.For<IDataStore>();
+            _ps = new PaymentServices.Services.PaymentService(_dataStore);
         }
 
         [Test]
         public void should_return_succeed_false_when_account_is_null()
         {
-            dataStore.GetAccount(Arg.Any<string>()).Returns((Account)null);
+            _dataStore.GetAccount(Arg.Any<string>()).Returns((Account)null);
 
             var result = _ps.MakePayment(new MakePaymentRequest()
             {
@@ -51,7 +48,7 @@ namespace PaymentService.Tests
                 Status = AccountStatus.Live
             };
 
-            dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
+            _dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
 
             var result = _ps.MakePayment(new MakePaymentRequest()
             {
@@ -76,7 +73,7 @@ namespace PaymentService.Tests
                 Status = AccountStatus.Live
             };
 
-            dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
+            _dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
 
             var result = _ps.MakePayment(new MakePaymentRequest()
             {
@@ -101,7 +98,7 @@ namespace PaymentService.Tests
                 Status = AccountStatus.Live
             };
 
-            dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
+            _dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
 
             var result = _ps.MakePayment(new MakePaymentRequest()
             {
@@ -126,7 +123,7 @@ namespace PaymentService.Tests
                 Status = AccountStatus.Live
             };
 
-            dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
+            _dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
 
             var result = _ps.MakePayment(new MakePaymentRequest()
             {
@@ -151,7 +148,7 @@ namespace PaymentService.Tests
                 Status = AccountStatus.Disabled
             };
 
-            dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
+            _dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
 
             var result = _ps.MakePayment(new MakePaymentRequest()
             {
@@ -176,7 +173,7 @@ namespace PaymentService.Tests
                 Status = AccountStatus.Live
             };
 
-            dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
+            _dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
 
             var result = _ps.MakePayment(new MakePaymentRequest()
             {
@@ -202,7 +199,7 @@ namespace PaymentService.Tests
                 Status = AccountStatus.Live
             };
 
-            dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
+            _dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
 
             var result = _ps.MakePayment(new MakePaymentRequest()
             {
@@ -228,7 +225,7 @@ namespace PaymentService.Tests
                 Status = AccountStatus.Live
             };
 
-            dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
+            _dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
 
             var result = _ps.MakePayment(new MakePaymentRequest()
             {
@@ -254,7 +251,7 @@ namespace PaymentService.Tests
                 Status = AccountStatus.Live
             };
 
-            dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
+            _dataStore.GetAccount(Arg.Any<string>()).Returns(acc);
 
             var result = _ps.MakePayment(new MakePaymentRequest()
             {

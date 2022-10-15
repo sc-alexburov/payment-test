@@ -1,8 +1,5 @@
-﻿using System;
-using System.Configuration;
+﻿using PaymentServices.Types;
 using LearnSolidAndTesting.Data;
-using PaymentServices.Data;
-using PaymentServices.Types;
 
 namespace PaymentServices.Services
 {

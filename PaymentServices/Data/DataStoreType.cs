@@ -1,12 +1,12 @@
-﻿using PaymentServices.Data;
-using System;
+﻿using System;
 using System.Configuration;
+using PaymentServices.Data;
 
 namespace LearnSolidAndTesting.Data
 {
     public class DataStoreType
     {
-        static IDataStore dataStore;
+        private static IDataStore _dataStore;
         protected DataStoreType() 
         {
             // since app settings could be changed once per build I'm sure that
@@ -22,16 +22,16 @@ namespace LearnSolidAndTesting.Data
 
             if (dataStoreType == "Backup")
             {
-                dataStore = new BackupAccountDataStore();
+                _dataStore = new BackupAccountDataStore();
             }
             else
             {
-                dataStore = new AccountDataStore();
+                _dataStore = new AccountDataStore();
             }
         }
         public static IDataStore GetDataStoreType()
         {
-            return dataStore ?? throw new ArgumentNullException(nameof(dataStore));   
+            return _dataStore ?? throw new ArgumentNullException(nameof(_dataStore));   
         }
     }
 }
