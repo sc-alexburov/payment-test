@@ -17,7 +17,7 @@ namespace PaymentServices.Services
 
             result.Success = ValidateMakePaymentRequest(request);
 
-            if(result.Success == false)
+            if(!result.Success)
             {
                 return result;
             }
